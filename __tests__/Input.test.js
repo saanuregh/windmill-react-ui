@@ -17,7 +17,7 @@ describe('Input', () => {
 
   it('should render with active styles', () => {
     const expected =
-      'focus:border-purple-400 dark:border-gray-600 focus:shadow-outline-purple dark:focus:border-gray-600 dark:focus:shadow-outline-gray dark:bg-gray-700'
+      'focus:border-green-400 dark:border-gray-600 focus:shadow-outline-green dark:focus:border-gray-600 dark:focus:shadow-outline-gray dark:bg-gray-700'
     const wrapper = mount(<Input />)
 
     expect(wrapper.find('input').getDOMNode().getAttribute('class')).toContain(expected)
@@ -48,7 +48,7 @@ describe('Input', () => {
 
   it('should render with radio styles', () => {
     const expected =
-      'text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray'
+      'text-green-600 form-radio focus:border-green-400 focus:outline-none focus:shadow-outline-green dark:focus:shadow-outline-gray'
     const wrapper = mount(<Input type="radio" />)
 
     expect(wrapper.find('input[type="radio"]').getDOMNode().getAttribute('class')).toContain(
@@ -58,7 +58,7 @@ describe('Input', () => {
 
   it('should render with checkbox styles', () => {
     const expected =
-      'text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray'
+      'text-green-600 form-checkbox focus:border-green-400 focus:outline-none focus:shadow-outline-green dark:focus:shadow-outline-gray'
     const wrapper = mount(<Input type="checkbox" />)
 
     expect(wrapper.find('input[type="checkbox"]').getDOMNode().getAttribute('class')).toContain(

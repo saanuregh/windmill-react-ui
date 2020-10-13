@@ -43,14 +43,14 @@ describe('Badge', () => {
   })
 
   it('should render with primary styles', () => {
-    const expected = 'text-purple-700 bg-purple-100 dark:text-white dark:bg-purple-600'
+    const expected = 'text-green-700 bg-green-100 dark:text-white dark:bg-green-600'
     const wrapper = mount(<Badge type="primary" />)
 
     expect(wrapper.find('span').getDOMNode().getAttribute('class')).toContain(expected)
   })
 
   it('should render with primary styles when no type is used', () => {
-    const expected = 'text-purple-700 bg-purple-100 dark:text-white dark:bg-purple-600'
+    const expected = 'text-green-700 bg-green-100 dark:text-white dark:bg-green-600'
     const wrapper = mount(<Badge />)
 
     expect(wrapper.find('span').getDOMNode().getAttribute('class')).toContain(expected)

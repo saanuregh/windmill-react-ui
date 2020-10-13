@@ -16,7 +16,7 @@ describe('Textarea', () => {
 
   it('should render with active styles', () => {
     const expected =
-      'focus:border-purple-400 dark:border-gray-600 dark:focus:border-gray-600 dark:bg-gray-700 dark:focus:shadow-outline-gray focus:shadow-outline-purple'
+      'focus:border-green-400 dark:border-gray-600 dark:focus:border-gray-600 dark:bg-gray-700 dark:focus:shadow-outline-gray focus:shadow-outline-green'
     const wrapper = mount(<Textarea />)
 
     expect(wrapper.find('textarea').getDOMNode().getAttribute('class')).toContain(expected)

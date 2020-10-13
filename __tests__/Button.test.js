@@ -131,14 +131,14 @@ describe('Sizes', () => {
 
 describe('Primary Button', () => {
   it('should contain primary base classes', () => {
-    const expected = 'text-white bg-purple-600 border border-transparent'
+    const expected = 'text-white bg-green-600 border border-transparent'
     const wrapper = mount(<Button />)
 
     expect(wrapper.find('button').getDOMNode().getAttribute('class')).toContain(expected)
   })
 
   it('should contain primary active classes', () => {
-    const expected = 'active:bg-purple-600 hover:bg-purple-700 focus:shadow-outline-purple'
+    const expected = 'active:bg-green-600 hover:bg-green-700 focus:shadow-outline-green'
     const wrapper = mount(<Button />)
 
     expect(wrapper.find('button').getDOMNode().getAttribute('class')).toContain(expected)
@@ -152,7 +152,7 @@ describe('Primary Button', () => {
   })
 
   it('should not contain primary active classes when disabled', () => {
-    const expected = 'active:bg-purple-600 hover:bg-purple-700 focus:shadow-outline-purple'
+    const expected = 'active:bg-green-600 hover:bg-green-700 focus:shadow-outline-green'
     const wrapper = mount(<Button disabled />)
 
     expect(wrapper.find('button').getDOMNode().getAttribute('class')).not.toContain(expected)

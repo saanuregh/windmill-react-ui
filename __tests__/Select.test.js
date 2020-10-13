@@ -30,7 +30,7 @@ describe('Select', () => {
 
   it('should render with active styles', () => {
     const expected =
-      'focus:border-purple-400 dark:border-gray-600 dark:bg-gray-700 focus:shadow-outline-purple dark:focus:shadow-outline-gray dark:focus:border-gray-600'
+      'focus:border-green-400 dark:border-gray-600 dark:bg-gray-700 focus:shadow-outline-green dark:focus:shadow-outline-gray dark:focus:border-gray-600'
     const wrapper = mount(<Select />)
 
     expect(wrapper.find('select').getDOMNode().getAttribute('class')).toContain(expected)

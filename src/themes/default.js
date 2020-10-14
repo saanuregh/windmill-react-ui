@@ -75,11 +75,11 @@ export default {
   // Badge
   badge: {
     base: 'inline-flex px-2 text-xs font-medium leading-5 rounded-full',
-    success: 'text-green-700 bg-green-100 dark:bg-green-700 dark:text-green-100',
+    success: 'text-green-600 bg-green-100 dark:bg-green-600 dark:text-green-100',
     danger: 'text-red-700 bg-red-100 dark:text-red-100 dark:bg-red-700',
     warning: 'text-orange-700 bg-orange-100 dark:text-white dark:bg-orange-600',
     neutral: 'text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700',
-    primary: 'text-green-700 bg-green-100 dark:text-white dark:bg-green-600',
+    primary: 'text-green-600 bg-green-100 dark:text-white dark:bg-green-500',
   },
   // Backdrop
   backdrop: {
@@ -90,10 +90,10 @@ export default {
   textarea: {
     base: 'block w-full text-sm dark:text-gray-300 form-textarea focus:outline-none',
     active:
-      'focus:border-green-400 dark:border-gray-600 dark:focus:border-gray-600 dark:bg-gray-700 dark:focus:shadow-outline-gray focus:shadow-outline-green',
+      'focus:border-green-300 dark:border-gray-600 dark:focus:border-gray-600 dark:bg-gray-700 dark:focus:shadow-outline-gray focus:shadow-outline-green',
     disabled: 'cursor-not-allowed opacity-50 bg-gray-300 dark:bg-gray-800',
     valid:
-      'border-green-600 dark:bg-gray-700 focus:border-green-400 dark:focus:border-green-400 focus:shadow-outline-green dark:focus:shadow-outline-green',
+      'border-green-500 dark:bg-gray-700 focus:border-green-300 dark:focus:border-green-300 focus:shadow-outline-green dark:focus:shadow-outline-green',
     invalid:
       'border-red-600 dark:bg-gray-700 focus:border-red-400 dark:focus:border-red-400 focus:shadow-outline-red dark:focus:shadow-outline-red',
   },
@@ -101,12 +101,12 @@ export default {
   select: {
     base: 'block w-full text-sm dark:text-gray-300 focus:outline-none',
     active:
-      'focus:border-green-400 dark:border-gray-600 dark:bg-gray-700 focus:shadow-outline-green dark:focus:shadow-outline-gray dark:focus:border-gray-600',
+      'focus:border-green-300 dark:border-gray-600 dark:bg-gray-700 focus:shadow-outline-green dark:focus:shadow-outline-gray dark:focus:border-gray-600',
     select: 'form-select leading-5',
     multiple: 'form-multiselect',
     disabled: 'cursor-not-allowed opacity-50 bg-gray-300 dark:bg-gray-800',
     valid:
-      'border-green-600 dark:bg-gray-700 focus:border-green-400 dark:focus:border-green-400 focus:shadow-outline-green dark:focus:shadow-outline-green',
+      'border-green-500 dark:bg-gray-700 focus:border-green-300 dark:focus:border-green-300 focus:shadow-outline-green dark:focus:shadow-outline-green',
     invalid:
       'border-red-600 dark:bg-gray-700 focus:border-red-400 dark:focus:border-red-400 focus:shadow-outline-red dark:focus:shadow-outline-red',
   },
@@ -121,21 +121,21 @@ export default {
   input: {
     base: 'block w-full text-sm focus:outline-none dark:text-gray-300 form-input leading-5',
     active:
-      'focus:border-green-400 dark:border-gray-600 focus:shadow-outline-green dark:focus:border-gray-600 dark:focus:shadow-outline-gray dark:bg-gray-700',
+      'focus:border-green-300 dark:border-gray-600 focus:shadow-outline-green dark:focus:border-gray-600 dark:focus:shadow-outline-gray dark:bg-gray-700',
     disabled: 'cursor-not-allowed opacity-50 bg-gray-300 dark:bg-gray-800',
     valid:
-      'border-green-600 dark:bg-gray-700 focus:border-green-400 dark:focus:border-green-400 focus:shadow-outline-green dark:focus:shadow-outline-green',
+      'border-green-500 dark:bg-gray-700 focus:border-green-300 dark:focus:border-green-300 focus:shadow-outline-green dark:focus:shadow-outline-green',
     invalid:
       'border-red-600 dark:bg-gray-700 focus:border-red-400 dark:focus:border-red-400 focus:shadow-outline-red dark:focus:shadow-outline-red',
     radio:
-      'text-green-600 form-radio focus:border-green-400 focus:outline-none focus:shadow-outline-green dark:focus:shadow-outline-gray',
+      'text-green-500 form-radio focus:border-green-300 focus:outline-none focus:shadow-outline-green dark:focus:shadow-outline-gray',
     checkbox:
-      'text-green-600 form-checkbox focus:border-green-400 focus:outline-none focus:shadow-outline-green dark:focus:shadow-outline-gray',
+      'text-green-500 form-checkbox focus:border-green-300 focus:outline-none focus:shadow-outline-green dark:focus:shadow-outline-gray',
   },
   // HelperText
   helperText: {
     base: 'text-xs',
-    valid: 'text-green-600 dark:text-green-400',
+    valid: 'text-green-500 dark:text-green-300',
     invalid: 'text-red-600 dark:text-red-400',
   },
   // Card
@@ -174,8 +174,8 @@ export default {
       right: 'ml-2 -mr-1',
     },
     primary: {
-      base: 'text-white bg-green-600 border border-transparent',
-      active: 'active:bg-green-600 hover:bg-green-700 focus:shadow-outline-green',
+      base: 'text-white bg-green-500 border border-transparent',
+      active: 'active:bg-green-500 hover:bg-green-600 focus:shadow-outline-green',
       disabled: 'opacity-50 cursor-not-allowed',
     },
     outline: {
